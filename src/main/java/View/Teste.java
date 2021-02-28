@@ -7,7 +7,7 @@ package View;
 
 import Model.DAO.Banco;
 import Model.DAO.SalaDAO;
-import Model.Sala;
+import Model.SalaModel;
 import java.util.ArrayList;
 
 /**
@@ -19,7 +19,7 @@ public class Teste {
         Banco.inicia();
         SalaDAO salaDAO = new SalaDAO();
         
-        ArrayList<Sala> salas = salaDAO.selectAll();
+        ArrayList<SalaModel> salas = salaDAO.selectAll();
         System.out.println(salas.get(0));
         
     }

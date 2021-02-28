@@ -11,7 +11,7 @@ import Model.DAO.PessoaDAO;
 import Model.DAO.SalaDAO;
 import Model.EspacoModel;
 import Model.PessoaInscrita;
-import Model.Sala;
+import Model.SalaModel;
 import View.Pessoa;
 import java.util.ArrayList;
 
@@ -45,7 +45,7 @@ public class PessoaController {
         
         // buscar salas no banco de dados
         SalaDAO salaDAO = new SalaDAO();
-        ArrayList<Sala> salas = salaDAO.selectAll();
+        ArrayList<SalaModel> salas = salaDAO.selectAll();
         
         // exibir salas no combobox salas
         helper.preencherSalas1(salas);

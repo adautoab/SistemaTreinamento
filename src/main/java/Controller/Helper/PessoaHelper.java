@@ -7,7 +7,7 @@ package Controller.Helper;
 
 import Model.EspacoModel;
 import Model.PessoaInscrita;
-import Model.Sala;
+import Model.SalaModel;
 import View.Pessoa;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
@@ -66,28 +66,28 @@ public class PessoaHelper implements IHelper {
         }
     }
 
-    public void preencherSalas2(ArrayList<Sala> salas) {
+    public void preencherSalas2(ArrayList<SalaModel> salas) {
         DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getjComboBoxSalaEtapa2().getModel();
         
-        for (Sala sala : salas) {
+        for (SalaModel sala : salas) {
             comboBoxModel.addElement(sala); //aqui está o truque 
         }
     }
 
-    public void preencherSalas1(ArrayList<Sala> salas) {
+    public void preencherSalas1(ArrayList<SalaModel> salas) {
         DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getjComboBoxSalaEtapa1().getModel();
         
-        for (Sala sala : salas) {
+        for (SalaModel sala : salas) {
             comboBoxModel.addElement(sala); //aqui está o truque            
         }
     }
     
-    public Sala obterSala1(){
-        return (Sala) view.getjComboBoxSalaEtapa1().getSelectedItem();
+    public SalaModel obterSala1(){
+        return (SalaModel) view.getjComboBoxSalaEtapa1().getSelectedItem();
     }
     
-    public Sala obterSala2(){
-        return (Sala) view.getjComboBoxSalaEtapa2().getSelectedItem();
+    public SalaModel obterSala2(){
+        return (SalaModel) view.getjComboBoxSalaEtapa2().getSelectedItem();
     }    
 
     public EspacoModel obterEspaco1(){
@@ -105,8 +105,8 @@ public class PessoaHelper implements IHelper {
         //int id = Integer.parseInt(idString);
         String nome = view.getjTextNome().getText();
         String sobrenome = view.getjTextSobrenome().getText();
-        Sala sala1 = obterSala1();
-        Sala sala2 = obterSala2();
+        SalaModel sala1 = obterSala1();
+        SalaModel sala2 = obterSala2();
         EspacoModel espaco1 = obterEspaco1();
         EspacoModel espaco2 = obterEspaco2();
         

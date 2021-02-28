@@ -9,13 +9,13 @@ package Model;
  *
  * @author User
  */
-public class Sala {
+public class SalaModel {
     
     private int Id;
     private String Nome;
     private int Lotacao;
 
-    public Sala(int Id, String Nome, int Lotacao) {
+    public SalaModel(int Id, String Nome, int Lotacao) {
         this.Id = Id;
         this.Nome = Nome;
         this.Lotacao = Lotacao;

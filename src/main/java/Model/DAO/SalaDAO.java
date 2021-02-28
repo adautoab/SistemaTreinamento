@@ -5,7 +5,7 @@
  */
 package Model.DAO;
 
-import Model.Sala;
+import Model.SalaModel;
 import java.util.ArrayList;
 
 /**
@@ -19,7 +19,7 @@ public class SalaDAO {
      * Insere um cliente dentro do banco de dados
      * @param sala exige que seja passado um objeto do tipo sala
      */
-    public void insert(Sala sala){
+    public void insert(SalaModel sala){
         Banco.sala.add(sala);
     }
     
@@ -28,7 +28,7 @@ public class SalaDAO {
      * @param sala
      * @return 
      */
-    public boolean update(Sala sala){
+    public boolean update(SalaModel sala){
         
         for (int i = 0; i < Banco.sala.size(); i++) {
             if(idSaoIguais(Banco.sala.get(i),sala)){
@@ -45,8 +45,8 @@ public class SalaDAO {
      * @param sala
      * @return 
      */
-    public boolean delete(Sala sala){
-        for (Sala salaLista : Banco.sala) {
+    public boolean delete(SalaModel sala){
+        for (SalaModel salaLista : Banco.sala) {
             if(idSaoIguais(salaLista, sala)){
                 Banco.sala.remove(salaLista);
                 return true;
@@ -59,7 +59,7 @@ public class SalaDAO {
      * Retorna um arraylist com todos as salas do banco de dados
      * @return uma lista com todos os registros do banco
      */
-    public ArrayList<Sala> selectAll(){
+    public ArrayList<SalaModel> selectAll(){
         return Banco.sala;
     }
     
@@ -69,7 +69,7 @@ public class SalaDAO {
      * @param salaAComparar
      * @return verdadeiro caso os id forem iguais e falso se nao forem
      */
-    private boolean idSaoIguais(Sala sala, Sala salaAComparar) {
+    private boolean idSaoIguais(SalaModel sala, SalaModel salaAComparar) {
         return sala.getId() ==  salaAComparar.getId();
     }
     

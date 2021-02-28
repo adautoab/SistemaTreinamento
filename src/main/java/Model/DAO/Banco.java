@@ -5,7 +5,7 @@
  */
 package Model.DAO;
 
-import Model.Sala;
+import Model.SalaModel;
 import Model.EspacoModel;
 import Model.PessoaInscrita;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class Banco {
     
-    public static ArrayList<Sala> sala;
+    public static ArrayList<SalaModel> sala;
     public static ArrayList<EspacoModel> espaco;
     public static ArrayList<PessoaInscrita> pessoa;
     
@@ -24,15 +24,15 @@ public class Banco {
     public static void inicia(){
     
         //Instancia os Objetos
-        sala = new ArrayList<Sala>();
+        sala = new ArrayList<SalaModel>();
         espaco = new ArrayList<EspacoModel>();
         pessoa = new ArrayList<PessoaInscrita>();
         
         //criando elementos  
                  
-        Sala sala1 = new Sala(1, "Sala Java", 30);
-        Sala sala2 = new Sala(2, "Sala Banco de Dados", 30);
-        Sala sala3 = new Sala(3, "Sala Html", 15);
+        SalaModel sala1 = new SalaModel(1, "Sala Java", 30);
+        SalaModel sala2 = new SalaModel(2, "Sala Banco de Dados", 30);
+        SalaModel sala3 = new SalaModel(3, "Sala Html", 15);
         
 
         EspacoModel espaco1 = new EspacoModel(1, "Café Colonial", 30);

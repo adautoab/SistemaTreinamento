@@ -14,12 +14,12 @@ public class PessoaInscrita {
     private int Id;
     private String Nome;
     private String Sobrenome;
-    private Sala SalaEtapa1;
-    private Sala SalaEtapa2;
+    private SalaModel SalaEtapa1;
+    private SalaModel SalaEtapa2;
     private EspacoModel EspacoEtapa1;
     private EspacoModel EspacoEtapa2;
 
-    public PessoaInscrita(int Id, String Nome, String Sobrenome, Sala SalaEtapa1, Sala SalaEtapa2, EspacoModel EspacoEtapa1, EspacoModel EspacoEtapa2) {
+    public PessoaInscrita(int Id, String Nome, String Sobrenome, SalaModel SalaEtapa1, SalaModel SalaEtapa2, EspacoModel EspacoEtapa1, EspacoModel EspacoEtapa2) {
         this.Id = Id;
         this.Nome = Nome;
         this.Sobrenome = Sobrenome;
@@ -56,19 +56,19 @@ public class PessoaInscrita {
         this.Sobrenome = Sobrenome;
     }
 
-    public Sala getSalaEtapa1() {
+    public SalaModel getSalaEtapa1() {
         return SalaEtapa1;
     }
 
-    public void setSalaEtapa1(Sala SalaEtapa1) {
+    public void setSalaEtapa1(SalaModel SalaEtapa1) {
         this.SalaEtapa1 = SalaEtapa1;
     }
 
-    public Sala getSalaEtapa2() {
+    public SalaModel getSalaEtapa2() {
         return SalaEtapa2;
     }
 
-    public void setSalaEtapa2(Sala SalaEtapa2) {
+    public void setSalaEtapa2(SalaModel SalaEtapa2) {
         this.SalaEtapa2 = SalaEtapa2;
     }
 
