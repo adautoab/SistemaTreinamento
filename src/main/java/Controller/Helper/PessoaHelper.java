@@ -24,6 +24,10 @@ public class PessoaHelper implements IHelper {
      * Fornece acesso a view para poder trabalhar com os componentes da tela
      */
     private final Pessoa view;
+    /**
+     * Construtor da classe
+     * @param view 
+     */
     public PessoaHelper(Pessoa view) {
         this.view = view;
     }
@@ -72,6 +76,10 @@ public class PessoaHelper implements IHelper {
         
     }
 
+    /**
+     * Métodos para preencher os ComboBox com os dados vindo do Banco
+     * @param espacos 
+     */
     public void preencherEspacos2(ArrayList<EspacoModel> espacos) {
         DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getjComboBoxEspaco2().getModel();
         
@@ -80,6 +88,10 @@ public class PessoaHelper implements IHelper {
         }
     }
 
+    /**
+     * Métodos para preencher os ComboBox com os dados vindo do Banco
+     * @param salas 
+     */
     public void preencherSalas2(ArrayList<SalaModel> salas) {
         DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getjComboBoxSalaEtapa2().getModel();
         
@@ -88,6 +100,10 @@ public class PessoaHelper implements IHelper {
         }
     }
 
+    /**
+     * Métodos para preencher os ComboBox com os dados vindo do Banco
+     * @param salas 
+     */
     public void preencherSalas1(ArrayList<SalaModel> salas) {
         DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getjComboBoxSalaEtapa1().getModel();
         
@@ -104,6 +120,10 @@ public class PessoaHelper implements IHelper {
         return (SalaModel) view.getjComboBoxSalaEtapa1().getSelectedItem();
     }
     
+    /**
+     * Retorna as Salas selecionadas no ComboBox
+     * @return 
+     */
     public SalaModel obterSala2(){
         return (SalaModel) view.getjComboBoxSalaEtapa2().getSelectedItem();
     }    
@@ -116,6 +136,10 @@ public class PessoaHelper implements IHelper {
         return (EspacoModel) view.getjComboBoxEspaco1().getSelectedItem();
     }    
     
+    /**
+     * Retorna os Espacos selecionados no ComboBox
+     * @return 
+     */
     public EspacoModel obterEspaco2(){
         return (EspacoModel) view.getjComboBoxEspaco2().getSelectedItem();
     }    

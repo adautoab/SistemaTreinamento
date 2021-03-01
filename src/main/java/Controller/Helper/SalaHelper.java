@@ -21,6 +21,10 @@ public class SalaHelper implements IHelper{
      * Fornce acesso a view para poder trabalhar com os componentes da tela
      */
     private final Sala view;
+    /**
+     * Construtor da classe
+     * @param view 
+     */
     public SalaHelper(Sala view) {
         this.view = view;
     }
@@ -51,6 +55,10 @@ public class SalaHelper implements IHelper{
         view.getjTextFieldLotacao().setText("");
     }
 
+    /**
+     * Preenche tabela da view com os dados vindos do banco
+     * @param salas 
+     */
     public void preencherTabela(ArrayList<SalaModel> salas) {
         
         DefaultTableModel tableModel = (DefaultTableModel) view.getjTableSala().getModel();

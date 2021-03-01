@@ -256,55 +256,109 @@ public class Pessoa extends javax.swing.JFrame {
         return jTablePessoa;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jTablePessoa 
+     */
     public void setjTablePessoa(JTable jTablePessoa) {
         this.jTablePessoa = jTablePessoa;
     }
 
+    
+    /**
+     * Getters e Setters da View Pessoa
+     * @return 
+     */
     public JComboBox<String> getjComboBoxEspaco1() {
         return jComboBoxEspaco1;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jComboBoxEspaco1 
+     */
     public void setjComboBoxEspaco1(JComboBox<String> jComboBoxEspaco1) {
         this.jComboBoxEspaco1 = jComboBoxEspaco1;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @return 
+     */
     public JComboBox<String> getjComboBoxEspaco2() {
         return jComboBoxEspaco2;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jComboBoxEspaco2 
+     */
     public void setjComboBoxEspaco2(JComboBox<String> jComboBoxEspaco2) {
         this.jComboBoxEspaco2 = jComboBoxEspaco2;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @return 
+     */
     public JComboBox<String> getjComboBoxSalaEtapa1() {
         return jComboBoxSalaEtapa1;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jComboBoxSalaEtapa1 
+     */
     public void setjComboBoxSalaEtapa1(JComboBox<String> jComboBoxSalaEtapa1) {
         this.jComboBoxSalaEtapa1 = jComboBoxSalaEtapa1;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @return 
+     */
     public JComboBox<String> getjComboBoxSalaEtapa2() {
         return jComboBoxSalaEtapa2;
     }
 
+    
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jComboBoxSalaEtapa2 
+     */
     public void setjComboBoxSalaEtapa2(JComboBox<String> jComboBoxSalaEtapa2) {
         this.jComboBoxSalaEtapa2 = jComboBoxSalaEtapa2;
     }
 
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @return 
+     */
     public JTextField getjTextNome() {
         return jTextNome;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jTextNome 
+     */
     public void setjTextNome(JTextField jTextNome) {
         this.jTextNome = jTextNome;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @return 
+     */
     public JTextField getjTextSobrenome() {
         return jTextSobrenome;
     }
 
+    /**
+     * Getters e Setters da View Pessoa
+     * @param jTextSobrenome 
+     */
     public void setjTextSobrenome(JTextField jTextSobrenome) {
         this.jTextSobrenome = jTextSobrenome;
     }

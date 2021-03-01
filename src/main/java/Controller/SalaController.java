@@ -13,21 +13,30 @@ import java.util.ArrayList;
 
 
 /**
- *
- * @author User
+ * Implementa a classe controladora.
+ * Tem acesso a view e ao helper
+ * Atualiza a tabela e salva nova sala com a ajuda do helper
+ * @author Adauto
  */
+
 public class SalaController {
 
     private final Sala view;
     private final SalaHelper helper;
 
+    /**
+     * Construtor da classe
+     * @param view 
+     */
     public SalaController(Sala view) {
         this.view = view;
         this.helper = new SalaHelper(view);
             }
 
     
-    
+    /**
+     * Atualiza tabela na view
+     */
     public void atualizarTabela(){
         
         //buscar lista com pessoas no BD
@@ -39,6 +48,9 @@ public class SalaController {
         
     }
     
+    /**
+     * Salva nova sala no Banco
+     */
     public void salvarSala(){
         
         //buscar objeto Espaco da tela

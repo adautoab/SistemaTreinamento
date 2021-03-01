@@ -165,22 +165,42 @@ public class Sala extends javax.swing.JFrame {
         return jTableSala;
     }
 
+    /**
+     * Getters e Setters da View Sala
+     * @param jTableSala 
+     */
     public void setjTableSala(JTable jTableSala) {
         this.jTableSala = jTableSala;
     }
 
+    /**
+     * Getters e Setters da View Sala
+     * @return 
+     */
     public JTextField getjTextFieldLotacao() {
         return jTextFieldLotacao;
     }
 
+    /**
+     * Getters e Setters da View Sala
+     * @param jTextFieldLotacao 
+     */
     public void setjTextFieldLotacao(JTextField jTextFieldLotacao) {
         this.jTextFieldLotacao = jTextFieldLotacao;
     }
 
+    /**
+     * Getters e Setters da View Sala
+     * @return 
+     */
     public JTextField getjTextFieldNome() {
         return jTextFieldNome;
     }
 
+    /**
+     * Getters e Setters da View Sala
+     * @param jTextFieldNome 
+     */
     public void setjTextFieldNome(JTextField jTextFieldNome) {
         this.jTextFieldNome = jTextFieldNome;
     }

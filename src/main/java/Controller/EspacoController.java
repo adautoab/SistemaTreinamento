@@ -12,38 +12,59 @@ import View.Espaco;
 import java.util.ArrayList;
 
 /**
- *
- * @author User
+ * Implementa a classe controladora.
+ * Tem acesso a view e ao helper
+ * Atualiza a tabela e salva novo espaco com a ajuda do helper
+ * @author Adauto
  */
 public class EspacoController {
 
     private final Espaco view;
     private final EspacoHelper helper;
 
-
+    /**
+     * Construtor da classe
+     * @param view 
+     */
     public EspacoController(Espaco view) {
         this.view = view;
         this.helper = new EspacoHelper(view);
     }
     
-    
+    /**
+     * Atualiza tabela na view
+     */
     public void atualizarTabela(){
-        // buscar lista com pessoas no BD
+        
+        /**
+         * Busca lista com pessoas no BD
+         */
         EspacoDAO espacoDAO = new EspacoDAO();
         ArrayList<Model.EspacoModel> espacos = espacoDAO.selectAll();
         
-        // exibir lista na view
+        /**
+         * Exibe lista na view
+         */
         helper.preencherTabela(espacos);
 
         
     }
     
+    /**
+     * Salva no banco
+     */
     public void salvarEspaco(){
-        //buscar objeto Espaco da tela
+        /**
+         * Buscar objeto Espaco na tela
+         */
         EspacoModel espaco = helper.obterModelo();
-        //salvar objeto no bando de dados
+        /**
+         * Salva objeto no banco de dados
+         */
         new EspacoDAO().insert(espaco);
-        //inserir elemento na tabela
+        /**
+         * Inserir elemento na tabela
+         */
         atualizarTabela();
         helper.limparTela();
     }

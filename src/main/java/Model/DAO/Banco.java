@@ -17,11 +17,22 @@ import java.util.ArrayList;
  */
 public class Banco {
     
+    /**
+     * Variável para sala
+     */
     public static ArrayList<SalaModel> sala;
+    /**
+     * Variável para espaco
+     */
     public static ArrayList<EspacoModel> espaco;
+    /**
+     * Variável para pessoa
+     */
     public static ArrayList<PessoaInscrita> pessoa;
     
-    
+    /**
+     * Instancia os Objetos para uso no Banco
+     */
     public static void inicia(){
     
          /**

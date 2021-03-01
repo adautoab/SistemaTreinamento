@@ -12,7 +12,14 @@ package Controller.Helper;
  */
 public interface IHelper {
     
+    /**
+     * Metodo abstrato para herança
+     * @return 
+     */
     public abstract Object obterModelo();
     
+    /**
+     * Metodo abstrato para herança
+     */
     public abstract void limparTela();
 }

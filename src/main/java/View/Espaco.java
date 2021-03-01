@@ -202,22 +202,42 @@ public class Espaco extends javax.swing.JFrame {
         return jTableEspaco;
     }
 
+    /**
+     * Getters e Setters da View Espaco
+     * @param jTableEspaco 
+     */
     public void setjTableEspaco(JTable jTableEspaco) {
         this.jTableEspaco = jTableEspaco;
     }
 
+    /**
+     * Getters e Setters da View Espaco
+     * @return 
+     */
     public JTextField getjTextLotacao() {
         return jTextLotacao;
     }
 
+    /**
+     * Getters e Setters da View Espaco
+     * @param jTextLotacao 
+     */
     public void setjTextLotacao(JTextField jTextLotacao) {
         this.jTextLotacao = jTextLotacao;
     }
 
+    /**
+     * Getters e Setters da View Espaco
+     * @return 
+     */
     public JTextField getjTextNome() {
         return jTextNome;
     }
 
+    /**
+     * Getters e Setters da View Espaco
+     * @param jTextNome 
+     */
     public void setjTextNome(JTextField jTextNome) {
         this.jTextNome = jTextNome;
     }

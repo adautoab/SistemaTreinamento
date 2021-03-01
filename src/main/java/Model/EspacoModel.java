@@ -37,22 +37,42 @@ public class EspacoModel {
         return Id;
     }
 
+    /**
+     * Getters e Setters da classe EspacoModel
+     * @param Id 
+     */
     public void setId(int Id) {
         this.Id = Id;
     }
     
+    /**
+     * Getters e Setters da classe EspacoModel
+     * @return 
+     */ 
     public String getNome() {
         return Nome;
     }
 
+    /**
+     * Getters e Setters da classe EspacoModel
+     * @param Nome 
+     */
     public void setNome(String Nome) {
         this.Nome = Nome;
     }
 
+    /**
+     * Getters e Setters da classe EspacoModel
+     * @return 
+     */
     public int getLotacao() {
         return Lotacao;
     }
 
+    /**
+     * Getters e Setters da classe EspacoModel
+     * @param Lotacao 
+     */  
     public void setLotacao(int Lotacao) {
         this.Lotacao = Lotacao;
     }

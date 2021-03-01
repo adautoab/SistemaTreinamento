@@ -23,6 +23,10 @@ public class EspacoHelper implements IHelper{
      * Fornece acesso a view para poder trabalhar com os componentes da tela
      */
     private final Espaco view; 
+    /**
+     * Construtor da classe
+     * @param view 
+     */
     public EspacoHelper(Espaco view) {
         this.view = view;
     }
