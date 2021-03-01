@@ -6,7 +6,8 @@
 package Model;
 
 /**
- *
+ * Modelagem da classe PessoaInscrita que implemnta uma pessoa
+ * que será inscrita no Treinamento
  * @author User
  */
 public class PessoaInscrita {
@@ -30,7 +31,10 @@ public class PessoaInscrita {
     }
 
 
-
+    /**
+     * Getters e Setters da classe PessoaInscrita
+     * @return 
+     */
     public int getId() {
         return Id;
     }

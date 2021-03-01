@@ -15,22 +15,32 @@ import javax.swing.DefaultComboBoxModel;
 
 /**
  *
- * @author User
+ * @author Adauto
  */
 public class PessoaHelper implements IHelper {
     
+    /**
+     * Construtor da classe.
+     * Fornece acesso a view para poder trabalhar com os componentes da tela
+     */
     private final Pessoa view;
-
     public PessoaHelper(Pessoa view) {
         this.view = view;
     }
 
+    /**
+     * Preenche a tabela com os dados vindos do Banco
+     * @param pessoas 
+     */
     public void preencherTabela(ArrayList<Model.PessoaInscrita> pessoas) {
         
         DefaultTableModel tableModel = (DefaultTableModel) view.getjTablePessoa().getModel();
         tableModel.setNumRows(0);
         
-        // percorrer a lista preenchendo o tableModel
+        
+        /**
+         *  Percorre a lista preenchendo o TableModel
+         */
         for (Model.PessoaInscrita pessoa : pessoas) {
             
             tableModel.addRow(new Object[]{
@@ -49,6 +59,10 @@ public class PessoaHelper implements IHelper {
     }
 
 
+    /**
+     * Métodos para preencher os ComboBox com os dados vindo do Banco
+     * @param espacos 
+     */
     public void preencherEspacos1(ArrayList<EspacoModel> espacos) {
         DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getjComboBoxEspaco1().getModel();
         
@@ -82,6 +96,10 @@ public class PessoaHelper implements IHelper {
         }
     }
     
+    /**
+     * Retorna as Salas selecionadas no ComboBox
+     * @return 
+     */
     public SalaModel obterSala1(){
         return (SalaModel) view.getjComboBoxSalaEtapa1().getSelectedItem();
     }
@@ -90,6 +108,10 @@ public class PessoaHelper implements IHelper {
         return (SalaModel) view.getjComboBoxSalaEtapa2().getSelectedItem();
     }    
 
+    /**
+     * Retorna os Espacos selecionados no ComboBox
+     * @return 
+     */
     public EspacoModel obterEspaco1(){
         return (EspacoModel) view.getjComboBoxEspaco1().getSelectedItem();
     }    
@@ -101,8 +123,6 @@ public class PessoaHelper implements IHelper {
     
     @Override
     public PessoaInscrita obterModelo() {
-        //String  idString = view.getjTextId().getText();
-        //int id = Integer.parseInt(idString);
         String nome = view.getjTextNome().getText();
         String sobrenome = view.getjTextSobrenome().getText();
         SalaModel sala1 = obterSala1();

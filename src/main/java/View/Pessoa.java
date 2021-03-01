@@ -17,10 +17,13 @@ import javax.swing.JTextField;
  */
 public class Pessoa extends javax.swing.JFrame {
 
+    /**
+     * Declaração do controlador desta view;
+     */
     private final PessoaController controller;
 
     /**
-     * Creates new form Pessoa
+     * Cria uma nova View de Pessoa
      */
     public Pessoa() {
         initComponents();
@@ -206,7 +209,7 @@ public class Pessoa extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Cria e mostra o form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Pessoa().setVisible(true);
@@ -234,12 +237,21 @@ public class Pessoa extends javax.swing.JFrame {
     private javax.swing.JTextField jTextSobrenome;
     // End of variables declaration//GEN-END:variables
 
+    
+    /**
+     * Método iniciar(), executa quando inicia esta View
+     */
     private void iniciar() {
         this.controller.atualizarTabela();
         this.controller.atualizaSala();
         this.controller.atualizaEspaco();
     }
 
+    
+    /**
+     * Aqui abaixo todos os Getters e Setters da View Pessoa
+     * @return 
+     */
     public JTable getjTablePessoa() {
         return jTablePessoa;
     }

@@ -11,7 +11,8 @@ import Model.PessoaInscrita;
 import java.util.ArrayList;
 
 /**
- *
+ * Modela da classe Banco que implementa o Banco de Dados
+ * em forma de ArrayList do Java
  * @author adauto
  */
 public class Banco {
@@ -23,13 +24,17 @@ public class Banco {
     
     public static void inicia(){
     
-        //Instancia os Objetos
+         /**
+         * Instancia os Objetos
+         */
         sala = new ArrayList<SalaModel>();
         espaco = new ArrayList<EspacoModel>();
         pessoa = new ArrayList<PessoaInscrita>();
         
-        //criando elementos  
-                 
+        
+        /**
+         * Cria cada elemento deste Banco
+         */         
         SalaModel sala1 = new SalaModel(1, "Sala Java", 30);
         SalaModel sala2 = new SalaModel(2, "Sala Banco de Dados", 30);
         SalaModel sala3 = new SalaModel(3, "Sala Html", 15);
@@ -51,10 +56,11 @@ public class Banco {
         
        
         
-        //Adiciona Elementos na lista
                 
 
-        
+        /**
+         * Adiciona elementos na lista
+         */
         sala.add(sala1);
         sala.add(sala2);
         sala.add(sala3);

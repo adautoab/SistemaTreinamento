@@ -9,15 +9,17 @@ import Controller.SistemaTreinamentoController;
 import Model.DAO.Banco;
 
 /**
- *
- * @author User
+ * View Inicial do Sistema
+ * @author Adauto
  */
 public class SistemaTreinamento extends javax.swing.JFrame {
 
     private final SistemaTreinamentoController controller;
 
     /**
-     * Creates new form SistemaTreinamento
+     * Cria novo form SistemaTreinamento
+     * Passa esta View como parâmetro para seu Controller
+     * Incia o Bando de Dados
      */
     public SistemaTreinamento() {
         initComponents();

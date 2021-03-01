@@ -19,7 +19,7 @@ public class Espaco extends javax.swing.JFrame {
     private final EspacoController controller;
 
     /**
-     * Creates new form Espaco
+     * Cria um novo form Espaco
      */
     public Espaco() {
         initComponents();
@@ -192,6 +192,12 @@ public class Espaco extends javax.swing.JFrame {
     private javax.swing.JTextField jTextNome;
     // End of variables declaration//GEN-END:variables
 
+    
+    
+    /**
+     * Aqui abaixo todos os Getters e Setters da View Espaco
+     * @return 
+     */
     public JTable getjTableEspaco() {
         return jTableEspaco;
     }

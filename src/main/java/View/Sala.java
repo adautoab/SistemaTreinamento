@@ -156,6 +156,11 @@ public class Sala extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldNome;
     // End of variables declaration//GEN-END:variables
 
+    
+    /**
+     * Aqui abaixo todos os Getters e Setters da View Sala
+     * @return 
+     */
     public JTable getjTableSala() {
         return jTableSala;
     }

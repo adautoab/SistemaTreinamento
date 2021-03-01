@@ -6,8 +6,9 @@
 package Controller.Helper;
 
 /**
- *
- * @author User
+ * Interface que obriga seus filhos a implementar
+ * ObterModelo() e limparTela()
+ * @author Adauto
  */
 public interface IHelper {
     

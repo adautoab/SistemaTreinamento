@@ -16,12 +16,21 @@ import javax.swing.table.DefaultTableModel;
  */
 public class SalaHelper implements IHelper{
     
+    /**
+     * Construtor da classe.
+     * Fornce acesso a view para poder trabalhar com os componentes da tela
+     */
     private final Sala view;
-
     public SalaHelper(Sala view) {
         this.view = view;
     }
 
+    /**
+     * Sobrescreve obterModelo() herdado.
+     * Instancia um objetos com os dados da tela e retorna o objeto
+     * para o Controller
+     * @return 
+     */
     @Override
     public SalaModel obterModelo() {
         String nome = view.getjTextFieldNome().getText();
@@ -32,6 +41,10 @@ public class SalaHelper implements IHelper{
         return sala;
     }
 
+    /**
+     * Sobrescreve limparTela() herdado.
+     * Limpa a tela setando a String dos JTextField para vazio
+     */    
     @Override
     public void limparTela() {
         view.getjTextFieldNome().setText("");
@@ -40,11 +53,13 @@ public class SalaHelper implements IHelper{
 
     public void preencherTabela(ArrayList<SalaModel> salas) {
         
-DefaultTableModel tableModel = (DefaultTableModel) view.getjTableSala().getModel();
+        DefaultTableModel tableModel = (DefaultTableModel) view.getjTableSala().getModel();
         tableModel.setNumRows(0);
         
-        // percorrer a lista preenchendo o tableModel
         
+        /**
+         * percorrer a lista preenchendo o tableModel
+         */
         for (SalaModel sala : salas) {
                     
             tableModel.addRow(new Object[]{

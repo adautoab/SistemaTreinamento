@@ -6,7 +6,7 @@
 package Model;
 
 /**
- *
+ * Modelagem da classe SalaModel que implementa uma sala no Treinamento
  * @author User
  */
 public class SalaModel {
@@ -21,6 +21,10 @@ public class SalaModel {
         this.Lotacao = Lotacao;
     }
 
+    /**
+     * Getters e Setters da classe SalaModel
+     * @return 
+     */
     public int getId() {
         return Id;
     }
